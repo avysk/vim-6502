@@ -4,6 +4,8 @@ This is a very simple plugin providing syntax highlighting for 6502 assembly
 language if you use
 [Merlin32 cross-assembler](https://brutaldeluxe.fr/products/crossdevtools/merlin/).
 
+![Example](example.png)
+
 An effort was made to support not only the standard 6502 instructions, but also
 Merlin32-specific directives.
 
