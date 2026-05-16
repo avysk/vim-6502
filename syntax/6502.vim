@@ -38,7 +38,7 @@ syn keyword MerlinMandatory typ dsk
 syn region MerlinString6502 start=+"+ skip=+\\"+ end=+"+
 syn region MerlinASCIIString6502 start=+'+ skip=+\\'+ end=+'+
 
-syn match Label6502 "^[a-z_][a-z0-9_]\>"
+syn match Label6502 "^[A-za-z0-9]\+\>"
 syn match Comment6502 ";.*"
 syn match Comment6502 "\*.*"
 syn keyword Origin org
