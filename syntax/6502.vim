@@ -49,7 +49,7 @@ syn match BinaryNumber6502 "%[01][01_]*\>"
 syn match Immediate6502 "#\$\x\+\>"
 syn match Immediate6502 "#\d\+\>"
 
-hi link Label6502 Label
+hi link Label6502 Constant
 hi link Comment6502 Comment
 hi link Origin Statement
 hi link Opcode6502 Statement
