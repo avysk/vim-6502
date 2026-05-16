@@ -42,11 +42,11 @@ syn match Comment6502 ";.*"
 syn match Comment6502 "\*.*"
 syn keyword Origin org
 
-syn match HexadecimalNumber6502 "\<\$\x\+\>"
-syn match DecimalNumber6502 "\<\d\+\>"
-syn match BinaryNumber6502 "\<%[01][01_]*\>"
-syn match Immediate6502 "\<#\$\x\+\>"
-syn match Immediate6502 "\<#\d\+\>"
+syn match HexadecimalNumber6502 "\$\x\+\>"
+syn match DecimalNumber6502 "\d\+\>"
+syn match BinaryNumber6502 "%[01][01_]*\>"
+syn match Immediate6502 "#\$\x\+\>"
+syn match Immediate6502 "#\d\+\>"
 
 hi link Label6502 Label
 hi link Comment6502 Comment
