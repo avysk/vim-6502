@@ -29,15 +29,16 @@ syn match MerlinInclude "^\s*putbin\s.*$"
 syn match MerlinInclude "^\s*use\s.*$"
 syn keyword MerlinEnd end
 syn keyword MerlinMisc chk dat dum dend err
-syn match MerlinLocalLabel "\]\w\+"
-syn match MerlinLocalLabel ":\w\+"
-syn match MerlinDynamicLabel "\w*@\w*"
+syn match MerlinLocalLabel "^\]\w\+\>"
+syn match MerlinLocalLabel "\s\zs\]\w\+\>"
+syn match MerlinLocalLabel "^:\w\+\>"
+syn match MerlinLocalLabel "\s\zs:\w\+\>"
+syn match MerlinDynamicLabel "\<\w*@\w*\>"
 syn keyword MerlinMandatory typ dsk
 syn region MerlinString6502 start=+"+ skip=+\\"+ end=+"+
 syn region MerlinASCIIString6502 start=+'+ skip=+\\'+ end=+'+
 
-syn match Label6502 "^[a-z_][a-z0-9_]*\ze$"
-syn match Label6502 "^[a-z_][a-z0-9_]*\ze\s"
+syn match Label6502 "^[a-z_][a-z0-9_]\>"
 syn match Comment6502 ";.*"
 syn match Comment6502 "\*.*"
 syn keyword Origin org
