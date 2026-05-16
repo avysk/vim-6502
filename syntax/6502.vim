@@ -1,7 +1,7 @@
 if version < 600
- syntax clear
+        syntax clear
 elseif exists("b:current_syntax")
- finish
+        finish
 endif
 
 syn case ignore
@@ -42,11 +42,11 @@ syn match Comment6502 ";.*"
 syn match Comment6502 "\*.*"
 syn keyword Origin org
 
-syn match HexadecimalNumber6502 "\$\x\+\>" " 'bug', but adding \< doesn't behave!
+syn match HexadecimalNumber6502 "\<\$\x\+\>"
 syn match DecimalNumber6502 "\<\d\+\>"
 syn match BinaryNumber6502 "\<%[01][01_]*\>"
-syn match Immediate6502 "#\$\x\+\>"
-syn match Immediate6502 "#\d\+\>"
+syn match Immediate6502 "\<#\$\x\+\>"
+syn match Immediate6502 "\<#\d\+\>"
 
 hi link Label6502 Label
 hi link Comment6502 Comment
@@ -54,7 +54,6 @@ hi link Origin Statement
 hi link Opcode6502 Statement
 hi link Register6502 Identifier
 hi link ControlFlow6502 Conditional
-
 
 hi link MerlinString6502 String
 hi link MerlinASCIIString6502 Special
@@ -73,6 +72,5 @@ hi link HexadecimalNumber6502 Number
 hi link BinaryNumber6502 Number
 hi link DecimalNumber6502 Number
 hi link Immediate6502 Special
-
 
 let b:current_syntax = "6502"
