@@ -18,3 +18,6 @@ use another plugin manager, please refer to its documentation.
 
 The plugin will set filetype of `*.S` files to `6502` (I think in stock vim
 they are set to `R`).
+
+It also disables `[`/`]` matching for `6502` filetype, because Merlin32 uses
+`]` character for local labels and variables.
