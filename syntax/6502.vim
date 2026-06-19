@@ -51,7 +51,7 @@ syn match Immediate6502 "#\d\+\>"
 
 hi link Label6502 Constant
 hi link Comment6502 Comment
-hi link Origin Bold
+hi link Origin Underlined
 hi link Opcode6502 Statement
 hi link Register6502 Identifier
 hi link ControlFlow6502 Conditional
@@ -63,11 +63,11 @@ hi link MerlinStorage Type
 hi link MerlinMacro PreProc
 hi link MerlinConditional Conditional
 hi link MerlinInclude Include
-hi link MerlinEnd Bold
+hi link MerlinEnd Underlined
 hi link MerlinMisc Special
 hi link MerlinLocalLabel Identifier
 hi link MerlinDynamicLabel Identifier
-hi link MerlinMandatory Bold
+hi link MerlinMandatory Underlined
 
 hi link HexadecimalNumber6502 Number
 hi link BinaryNumber6502 Number
