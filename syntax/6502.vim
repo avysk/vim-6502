@@ -51,7 +51,7 @@ syn match Immediate6502 "#\d\+\>"
 
 hi link Label6502 Constant
 hi link Comment6502 Comment
-hi link Origin Statement
+hi link Origin Bold
 hi link Opcode6502 Statement
 hi link Register6502 Identifier
 hi link ControlFlow6502 Conditional
